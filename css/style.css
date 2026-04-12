@@ -749,10 +749,11 @@ details p, details div {
 .article-body li { margin-bottom: 0.4rem; color: var(--text-light); }
 .article-body img {
   border-radius: var(--radius);
-  margin: 1.5rem auto;
+  margin: 2rem auto;
+  width: 100%;
+  box-shadow: var(--shadow);
 }
-.article-body img.landscape { max-width: 80%; }
-.article-body img.portrait { max-width: 50%; }
+.article-body img.portrait { max-width: 60%; }
 .article-body a { color: var(--orange); text-decoration: underline; }
 .article-body a:hover { color: var(--orange-hover); }
 .article-body .btn { text-decoration: none; color: #fff; }
