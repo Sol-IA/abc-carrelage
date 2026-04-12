@@ -52,9 +52,52 @@ ErrorDocument 404 /404.html
 Options -Indexes
 
 # --- Redirections 301 depuis ancien site WordPress ---
-# Décommenter et adapter quand le site sera en production
-# RewriteRule ^chape-liquide-manosque/?$ /chape-liquide-manosque.html [R=301,L]
-# RewriteRule ^pose-de-carrelage-manosque/?$ /pose-carrelage-manosque.html [R=301,L]
-# RewriteRule ^pose-parquet-manosque/?$ /pose-parquet-manosque.html [R=301,L]
-# RewriteRule ^nos-realisations/?$ /nos-realisations.html [R=301,L]
-# RewriteRule ^contact/?$ /contact.html [R=301,L]
+# Articles blog migrés
+Redirect 301 /carrelage-sur-plots-a-manosque/ /blog/carrelage-sur-plots.html
+Redirect 301 /fissures-dans-le-carrelage/ /blog/fissures-carrelage.html
+Redirect 301 /renover-vos-sols-irreguliers/ /blog/renover-sols-irreguliers.html
+Redirect 301 /carrelage-grand-format/ /blog/carrelage-grand-format.html
+Redirect 301 /chape-fluide-ou-traditionnelle/ /blog/chape-fluide-ou-traditionnelle.html
+Redirect 301 /la-chape-liquide-et-le-chauffage-au-sol/ /blog/chape-liquide-chauffage-sol.html
+Redirect 301 /renovation-de-vos-exterieurs/ /blog/renovation-exterieurs.html
+
+# Articles locaux → pages locales
+Redirect 301 /carreleur-a-aix-en-provence/ /carreleur-aix-en-provence.html
+Redirect 301 /chape-liquide-a-aix-en-provence/ /carreleur-aix-en-provence.html
+Redirect 301 /chape-liquide-forcalquier/ /carreleur-forcalquier.html
+Redirect 301 /pose-de-carrelage-a-forcalquier/ /carreleur-forcalquier.html
+Redirect 301 /pose-parquet-a-forcalquier/ /carreleur-forcalquier.html
+Redirect 301 /chape-liquide-sainte-tulle/ /carreleur-sainte-tulle.html
+Redirect 301 /pose-de-carrelage-a-sainte-tulle/ /carreleur-sainte-tulle.html
+Redirect 301 /carreleur-a-sainte-tulle/ /carreleur-sainte-tulle.html
+Redirect 301 /pose-parquet-sainte-tulle/ /carreleur-sainte-tulle.html
+Redirect 301 /chapiste-les-mees/ /chapiste-les-mees.html
+
+# Doublons → pages services
+Redirect 301 /carreleur-manosque/ /pose-carrelage-manosque.html
+Redirect 301 /carreleur-manosque-2/ /pose-carrelage-manosque.html
+Redirect 301 /carreleur-professionnel-manosque/ /
+Redirect 301 /chapiste-manosque/ /chape-liquide-manosque.html
+Redirect 301 /pose-carrelage-a-manosque/ /pose-carrelage-manosque.html
+Redirect 301 /pose-de-parquet-a-manosque/ /pose-parquet-manosque.html
+Redirect 301 /avantages-chape-liquide/ /chape-liquide-manosque.html
+Redirect 301 /chape-liquide/ /chape-liquide-manosque.html
+Redirect 301 /abc-chape-liquide-carrelage/ /a-propos.html
+Redirect 301 /renovation/ /renovation-salle-de-bain.html
+Redirect 301 /chape-liquide-manosque-et-pierrevert/ /chape-liquide-manosque.html
+
+# Blog listing
+Redirect 301 /blog-abc/ /blog.html
+Redirect 301 /blog-abc/page/2/ /blog.html
+Redirect 301 /blog-abc/page/3/ /blog.html
+
+# Pages services WordPress → statique
+Redirect 301 /chape-liquide-manosque/ /chape-liquide-manosque.html
+Redirect 301 /pose-carrelage-manosque/ /pose-carrelage-manosque.html
+Redirect 301 /pose-de-parquet/ /pose-parquet-manosque.html
+Redirect 301 /renovation-carrelage-manosque/ /renovation-salle-de-bain.html
+Redirect 301 /nos-realisations/ /nos-realisations.html
+Redirect 301 /devis-en-ligne/ /devis-en-ligne.html
+Redirect 301 /mentions-legales/ /mentions-legales.html
+Redirect 301 /politique-de-confidentialite/ /politique-confidentialite.html
+Redirect 301 /actualites/ /blog.html
