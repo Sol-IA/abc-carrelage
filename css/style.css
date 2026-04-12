@@ -318,14 +318,18 @@ nav#nav .container {
 .hero p { font-size: 1.1rem; max-width: 600px; opacity: 0.9; margin-bottom: 2rem; line-height: 1.8; }
 .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
 .hero__phone {
-  color: var(--orange);
-  font-size: 1.1rem;
-  font-weight: 600;
-  display: flex;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  transition: all var(--transition);
 }
-.hero__phone:hover { color: #fff; }
+.hero__phone:hover { border-color: var(--orange); color: var(--orange); }
 
 /* --- Cards Services --- */
 .services-grid {
