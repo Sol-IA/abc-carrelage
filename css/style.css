@@ -312,11 +312,11 @@ nav#nav .container {
   background: url('../assets/images/service-carrelage.webp') center/cover no-repeat;
   opacity: 0.2;
 }
-.hero .container { position: relative; z-index: 1; }
+.hero .container { position: relative; z-index: 1; text-align: center; }
 .hero h1 { color: #fff; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.25rem; }
 .hero .accent { color: var(--orange); }
-.hero p { font-size: 1.1rem; max-width: 600px; opacity: 0.9; margin-bottom: 2rem; line-height: 1.8; }
-.hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.hero p { font-size: 1.1rem; max-width: 650px; margin: 0 auto 2rem; opacity: 0.9; line-height: 1.8; }
+.hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; justify-content: center; }
 .hero__phone {
   color: #fff;
   font-size: 1rem;
@@ -728,13 +728,19 @@ details p, details div {
   color: var(--text-white);
   border-bottom: 3px solid var(--orange);
 }
-.page-header h1 { color: #fff; margin-bottom: 0.5rem; }
-.page-header p { color: var(--text-white-muted); max-width: 700px; }
+.page-header h1 { color: #fff; margin-bottom: 0.5rem; text-align: center; }
+.page-header p { color: var(--text-white-muted); max-width: 700px; margin: 0 auto; text-align: center; }
+.page-header .breadcrumb { text-align: center; }
 .page-header .breadcrumb a { color: var(--text-white-muted); }
 .page-header .breadcrumb { color: var(--text-white-muted); }
 
 /* --- Article body --- */
-.article-body { padding: 3rem 0; }
+.article-body {
+  padding: 3rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
 .article-body h2 { color: var(--orange); margin-top: 2.5rem; margin-bottom: 1rem; padding-top: 1rem; }
 .article-body h3 { margin-top: 2rem; }
 .article-body ul, .article-body ol { padding-left: 1.5rem; margin-bottom: 1rem; }
