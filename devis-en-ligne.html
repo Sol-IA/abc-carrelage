@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devis gratuit carrelage et chape | ABC Carrelage Manosque</title>
+<meta name="description" content="Demandez votre devis gratuit en ligne. Chape liquide, carrelage, parquet, rénovation à Manosque et en PACA. Réponse rapide.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://abc-carrelage.fr/devis-en-ligne.html">
+<meta property="og:title" content="Devis gratuit carrelage et chape | ABC Carrelage Manosque">
+<meta property="og:description" content="Demandez votre devis gratuit en ligne. Chape liquide, carrelage, parquet, rénovation à Manosque et en PACA.">
+<meta property="og:url" content="https://abc-carrelage.fr/devis-en-ligne.html">
+<meta property="og:image" content="https://abc-carrelage.fr/assets/og-image.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://abc-carrelage.fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Devis gratuit", "item": "https://abc-carrelage.fr/devis-en-ligne.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<nav id="nav" aria-label="Navigation principale">
+  <div class="container">
+    <a href="./" class="nav__logo" aria-label="ABC Carrelage - Accueil">
+      <img src="assets/logo.png" alt="ABC Chape liquide et Carrelage - Carreleur à Manosque" width="150" height="62" loading="eager">
+    </a>
+    <div class="nav__menu" id="nav-menu">
+      <a href="./">Accueil</a>
+      <div class="nav__dropdown">
+        <a href="./#services">Services</a>
+        <div class="nav__dropdown-menu">
+          <a href="chape-liquide-manosque.html">Chape liquide</a>
+          <a href="pose-carrelage-manosque.html">Carrelage</a>
+          <a href="pose-parquet-manosque.html">Parquet</a>
+          <a href="renovation-salle-de-bain.html">Rénovation</a>
+        </div>
+      </div>
+      <a href="nos-realisations.html">Réalisations</a>
+      <a href="blog.html">Blog</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="devis-en-ligne.html" class="btn-cta-nav">Devis gratuit</a>
+    </div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="./">Accueil</a> <span>›</span> Devis gratuit
+    </nav>
+    <h1>Demandez votre devis gratuit</h1>
+    <p>Remplissez le formulaire ci-dessous. Devis gratuit et sans engagement, réponse sous 48h.</p>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section">
+  <div class="container">
+    <form class="form" id="devis-form" action="php/send-form.php" method="POST">
+      <input type="hidden" name="form_type" value="devis">
+      <input type="hidden" name="csrf_token" id="csrf_token_devis" value="">
+
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="devis-nom">Nom *</label>
+          <input class="form__input" type="text" id="devis-nom" name="nom" required minlength="2" maxlength="100" autocomplete="name">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="devis-email">Email *</label>
+          <input class="form__input" type="email" id="devis-email" name="email" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="devis-tel">Téléphone *</label>
+          <input class="form__input" type="tel" id="devis-tel" name="telephone" required pattern="[0-9\s\+]{10,15}" autocomplete="tel">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="devis-ville">Ville du chantier</label>
+          <input class="form__input" type="text" id="devis-ville" name="ville" maxlength="100" autocomplete="address-level2">
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label class="form__label" for="devis-type">Type de projet *</label>
+          <select class="form__select" id="devis-type" name="type_projet" required>
+            <option value="">-- Choisir --</option>
+            <option value="chape">Chape liquide</option>
+            <option value="carrelage">Carrelage</option>
+            <option value="parquet">Parquet</option>
+            <option value="renovation">Rénovation salle de bain</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="devis-neuf">Neuf ou rénovation ?</label>
+          <select class="form__select" id="devis-neuf" name="neuf_renovation">
+            <option value="">-- Choisir --</option>
+            <option value="neuf">Construction neuve</option>
+            <option value="renovation">Rénovation</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="devis-surface">Surface estimée (m²)</label>
+        <input class="form__input" type="text" id="devis-surface" name="surface" maxlength="20" placeholder="ex : 30 m²">
+      </div>
+
+      <div class="form__group">
+        <label class="form__label" for="devis-message">Description du projet *</label>
+        <textarea class="form__textarea" id="devis-message" name="message" required minlength="10" maxlength="5000" placeholder="Décrivez votre projet : type de pièce, matériaux souhaités, contraintes particulières..."></textarea>
+      </div>
+
+      <!-- Honeypot -->
+      <div class="hp-field" aria-hidden="true">
+        <label for="website2">Ne pas remplir</label>
+        <input type="text" id="website2" name="website" autocomplete="off" tabindex="-1">
+      </div>
+
+      <div class="form__group">
+        <label class="form__checkbox">
+          <input type="checkbox" name="rgpd_consent" required>
+          J'accepte que mes données soient utilisées pour traiter ma demande de devis. <a href="politique-confidentialite.html" target="_blank" rel="noopener">Politique de confidentialité</a>
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;">Envoyer ma demande de devis</button>
+
+      <div class="form__message" id="form-message-devis"></div>
+    </form>
+
+    <p class="text-center mt-2" style="color:var(--text-secondary);font-size:0.9rem;">Devis gratuit et sans engagement. Pour les urgences : <a href="tel:+33652251226">06 52 25 12 26</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="ABC Chape liquide et Carrelage" width="120" height="49" loading="lazy" style="filter:brightness(0) invert(1);">
+        <p>Carreleur et chapiste à Manosque depuis 2015. Chape liquide, carrelage, parquet et rénovation dans les Alpes-de-Haute-Provence et en PACA.</p>
+      </div>
+      <div>
+        <p class="footer__title">Services</p>
+        <ul class="footer__links">
+          <li><a href="chape-liquide-manosque.html">Chape liquide</a></li>
+          <li><a href="pose-carrelage-manosque.html">Carrelage</a></li>
+          <li><a href="pose-parquet-manosque.html">Parquet</a></li>
+          <li><a href="renovation-salle-de-bain.html">Rénovation</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__title">Navigation</p>
+        <ul class="footer__links">
+          <li><a href="./">Accueil</a></li>
+          <li><a href="nos-realisations.html">Réalisations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__title">Contact</p>
+        <p>Les Quintrands, 2 172 Route de Volx</p>
+        <p>04100 Manosque</p>
+        <p><a href="tel:+33652251226">06 52 25 12 26</a></p>
+        <p><a href="mailto:contact@abc-carrelage.fr">contact@abc-carrelage.fr</a></p>
+        <div class="footer__social mt-1">
+          <a href="https://www.facebook.com/abc.carrelage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/abc_anthony_borey_carrelage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 ABC Chape liquide &amp; Carrelage · RCS 842 570 624 · Site réalisé par <a href="https://sol-ia.tech" target="_blank" rel="noopener">Sol.IA</a></p>
+      <p><a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Confidentialité</a> · <a href="#" id="cookie-manage">Gérer les cookies</a></p>
+    </div>
+  </div>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-label="Gestion des cookies">
+  <div class="cookie-content">
+    <p>Ce site utilise des cookies pour mesurer l'audience. Aucun cookie publicitaire. <a href="politique-confidentialite.html">En savoir plus</a></p>
+    <div class="cookie-buttons">
+      <button id="cookie-refuse" class="btn btn-outline">Refuser</button>
+      <button id="cookie-accept" class="btn btn-primary">Accepter</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.min.js" defer></script>
+</body>
+</html>
