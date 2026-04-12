@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "abc-carrelage",
+      "runtimeExecutable": "/usr/local/bin/npx",
+      "runtimeArgs": ["serve", "-l", "3001", "/Users/powop/Desktop/Claude Code/Sol.IA/abc-carrelage"],
+      "port": 3001,
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin"
+      }
+    }
+  ]
+}
