@@ -1,0 +1,11 @@
+# Systeme
+.DS_Store
+*.log
+
+# Documents internes Sol.IA (ne pas publier sur le site)
+docs/
+
+# Secrets / config serveur (module RDV, a venir)
+_secure/
+**/config.php
+**/service-account.json
